@@ -1,0 +1,32 @@
+<script type="module">
+
+import { behaviors } from './imports/comp-classes.js';
+
+
+  class Fish {
+
+    constructor() {
+      this.swimmable = new Swimmable();
+    }
+  }
+
+  class Bird {
+
+    constructor() {
+      this.walkable = behaviors.walkable;
+      this.swimmable = behaviors.swimmable;
+      this.flyable = behaviors.flyable;
+    }
+  }
+
+  document.write("Nemo the fish's activities:<br>");
+  var nemo = new Fish();
+  nemo.swimmable.swim();
+
+  document.write("Tweety the bird's activities:<br>");
+  var tweety = new Bird();
+  tweety.walkable.walk();
+  tweety.swimmable.swim();
+  tweety.flyable.fly();
+
+</script>
