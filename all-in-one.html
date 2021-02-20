@@ -1,0 +1,54 @@
+<script>
+
+import { cube, foo, graph } from './my-module.js';
+
+
+
+  class Walkable {
+
+    walk() {
+      console.log("Walking...<br>");
+    }
+  }
+
+  class Swimmable {
+
+    swim() {
+      console.log("Swimming...<br>");
+    }
+  }
+
+  class Flyable {
+
+    fly() {
+      console.log("Flying...<br>");
+    }
+  }
+
+  class Fish {
+
+    constructor() {
+      this.swimmable = new Swimmable();
+    }
+  }
+
+  class Bird {
+
+    constructor() {
+      this.walkable = new Walkable();
+      this.swimmable = new Swimmable();
+      this.flyable = new Flyable();
+    }
+  }
+
+  console.log("Nemo the fish's activities:<br>");
+  var nemo = new Fish();
+  nemo.swimmable.swim();
+
+  console.log("Tweety the bird's activities:<br>");
+  var tweety = new Bird();
+  tweety.walkable.walk();
+  tweety.swimmable.swim();
+  tweety.flyable.fly();
+
+</script>
