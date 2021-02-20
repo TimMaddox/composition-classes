@@ -21,6 +21,6 @@
   }
 
   
- const behaviors = {"walkable": new Walkable(), "swimmable": new Swimmable(), "flyable": new Flyable()}
+ const behaviors = {"walkable": Walkable, "swimmable": Swimmable, "flyable": Flyable}
  
  export {behaviors};
