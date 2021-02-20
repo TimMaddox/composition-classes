@@ -2,21 +2,21 @@
   class Walkable {
 
     walk() {
-      document.write("Walking...<br>");
+      console.log("Walking...");
     }
   }
 
   class Swimmable {
 
     swim() {
-      document.write("Swimming...<br>");
+      console.log("Swimming...");
     }
   }
 
   class Flyable {
 
     fly() {
-      document.write("Flying...<br>");
+      console.log("Flying...");
     }
   }
 
